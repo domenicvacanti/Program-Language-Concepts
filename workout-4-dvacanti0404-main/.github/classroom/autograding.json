@@ -1,0 +1,35 @@
+{
+  "tests": [
+    {
+      "name": "compile",
+      "setup": "",
+      "run": "ghc --make Exercises.hs",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "PublicTests",
+      "setup": "",
+      "run": "runhaskell PublicTests.hs",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "PublicTests not modified",
+      "setup": "",
+      "run": "echo '40f29311b4a8c8601b7ffa1e712f50c7  PublicTests.hs' | md5sum -c",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+
+  ]
+}

@@ -1,0 +1,12 @@
+--------------------------
+yes1.prog
+[Var "a",Var "b",Var "c"]
+--------------------------
+yes2.prog
+[FunCall "f" [Var "a",Var "b",Var "c"]]
+--------------------------
+yes3.prog
+[FunCall "f" [Var "a",FunCall "g" [Var "b",Var "c"],Var "d"],FunCall "h" [Var "h"]]
+--------------------------
+yes4.prog
+[FunCall "f" [],FunCall "g" [Var "a",FunCall "h" []]]

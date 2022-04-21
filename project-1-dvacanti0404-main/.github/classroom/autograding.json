@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Generate and compare network.txt",
+      "setup": "runhaskell Main Read sort1.txt",
+      "run": "diff network.txt network1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Run sort1 on an input list",
+      "setup": "",
+      "run": "runhaskell Main Run sort1.txt '[5,1,3,0]'",
+      "input": "",
+      "output": "[0,1,3,5]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Generate and compare parallel.txt",
+      "setup": "runhaskell Main Parallel sort1.txt",
+      "run": "diff parallel.txt parallel1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Is sorting network",
+      "setup": "",
+      "run": "runhaskell Main Sorting sort1.txt",
+      "input": "",
+      "output": "True",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Generate insertion network",
+      "setup": "runhaskell Main Create 5",
+      "run": "diff parallel.txt insertion5.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}

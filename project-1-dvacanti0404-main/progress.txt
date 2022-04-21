@@ -1,0 +1,1 @@
+I had a tough time trying to pattern match the information. Once I got help from Austin I was better able to see how to access the data. Was havinga lot of diffculty with types. This is something that I think I still haven't really figured out. There is not much else that confused me, especially after Austin helped explain somethings to me.

@@ -1,0 +1,176 @@
+{
+  "tests": [
+    {
+      "name": "setup",
+      "setup": "",
+      "run": "cabal v2-update; cabal v2-install alex; cabal v2-install happy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Regex p1 yes",
+      "setup": "",
+      "run": "cd RegexProblems; cabal v1-run p1-yes.txt | tail -1",
+      "input": "",
+      "output": "[p1(\"d\"),p1(\"ddd\"),p1(\"cccd\"),p1(\"cdddd\")]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Regex p2 yes",
+      "setup": "",
+      "run": "cd RegexProblems; cabal v1-run p2-yes.txt | tail -1",
+      "input": "",
+      "output": "[p2(\"eeffefefee\"),p2(\"ffeef\")]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Regex p3 yes",
+      "setup": "",
+      "run": "cd RegexProblems; cabal v1-run p3-yes.txt | tail -1",
+      "input": "",
+      "output": "[p3(\"cat123\"),p3(\"x77\")]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Regex p4 yes",
+      "setup": "",
+      "run": "cd RegexProblems; cabal v1-run p4-yes.txt | tail -1",
+      "input": "",
+      "output": "[p4(\"\\\"hello there\\\"\"),p4(\"'Goodbye'\")]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Regex p4 no",
+      "setup": "",
+      "run": "cd RegexProblems; (cabal v1-run p4-no.txt > /dev/null 2>&1) | echo \"Correctly did not find a lex\"",
+      "input": "",
+      "output": "Correctly did not find a lex",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Regex p5 yes",
+      "setup": "",
+      "run": "cd RegexProblems; cabal v1-run p5-yes.txt | tail -1",
+      "input": "",
+      "output": "[p5(\"XXYYXYX\"),p5(\"YXYYXY\"),p5(\"YY\")]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Regex p5 no",
+      "setup": "",
+      "run": "cd RegexProblems; (cabal v1-run p5-no.txt > /dev/null 2>&1) | echo \"Correctly did not find a lex\"",
+      "input": "",
+      "output": "Correctly did not find a lex",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+
+    {
+      "name": "Grammar1 yes1.tp",
+      "setup": "",
+      "run": "cd Grammar1; cabal v1-run yes1.tp | tail -1",
+      "input": "",
+      "output": "Unit",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Grammar1 yes2.tp",
+      "setup": "",
+      "run": "cd Grammar1; cabal v1-run yes2.tp | tail -1",
+      "input": "",
+      "output": "Unit",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Grammar1 yes3.tp",
+      "setup": "",
+      "run": "cd Grammar1; cabal v1-run yes3.tp | tail -1",
+      "input": "",
+      "output": "Arrow Unit (Arrow Unit Unit)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Grammar1 yes4.tp",
+      "setup": "",
+      "run": "cd Grammar1; cabal v1-run yes4.tp | tail -1",
+      "input": "",
+      "output": "Arrow (Arrow Unit Unit) (Arrow Unit Unit)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Grammar1 yes5.tp",
+      "setup": "",
+      "run": "cd Grammar1; cabal v1-run yes5.tp | tail -1",
+      "input": "",
+      "output": "Arrow (Arrow Unit Unit) Unit",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Grammar2 yes1.prog",
+      "setup": "",
+      "run": "cd Grammar2; cabal v1-run yes1.prog | tail -1",
+      "input": "",
+      "output": "[Var \"a\",Var \"b\",Var \"c\"]",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Grammar2 yes2.prog",
+      "setup": "",
+      "run": "cd Grammar2; cabal v1-run yes2.prog | tail -1",
+      "input": "",
+      "output": "[FunCall \"f\" [Var \"a\",Var \"b\",Var \"c\"]]",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Grammar2 yes3.prog",
+      "setup": "",
+      "run": "cd Grammar2; cabal v1-run yes3.prog | tail -1",
+      "input": "",
+      "output": "[FunCall \"f\" [Var \"a\",FunCall \"g\" [Var \"b\",Var \"c\"],Var \"d\"],FunCall \"h\" [Var \"h\"]]",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Grammar2 yes4.prog",
+      "setup": "",
+      "run": "cd Grammar2; cabal v1-run yes4.prog | tail -1",
+      "input": "",
+      "output": "[FunCall \"f\" [],FunCall \"g\" [Var \"a\",FunCall \"h\" []]]",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    }
+
+  ]
+}

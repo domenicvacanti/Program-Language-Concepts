@@ -1,0 +1,165 @@
+{
+  "tests": [
+    {
+      "name": "install Agda",
+      "setup": "",
+      "run": "sudo apt-get install -y agda-bin",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "check for screenshot",
+      "setup": "",
+      "run": "[ -f screenshot.png ]",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "bools1",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools1.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "bools2",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools2.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "bools3",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools3.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "bools4",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools4.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "bools5",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools5.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "bools6",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ bools6.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq1",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq1.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq2",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq2.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq3",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq3.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq4",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq4.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq5",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq5.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq6",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq6.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq7",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq7.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "eq8",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ eq8.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    }
+
+  ]
+}

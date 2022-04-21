@@ -1,0 +1,95 @@
+{
+  "tests": [
+    {
+      "name": "install Agda",
+      "setup": "",
+      "run": "sudo apt-get install -y agda-bin",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "uselib1",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ uselib1.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "uselib2",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ uselib2.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "uselib3",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ uselib3.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ind1",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ ind1.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ind2",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ ind2.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ind3",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ ind3.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ind4",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ ind4.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ind5",
+      "setup": "",
+      "run": "AGDA_DIR=/tmp/ agda --include-path=./ial/ ind5.agda",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    }
+
+  ]
+}
